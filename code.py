@@ -112,7 +112,30 @@ def grafico():
     plt.tight_layout()
     plt.show()
 
+    # PLOTAR EM DOIS GRAFICOS
+    # def grafico():
+    # plt.figure(figsize=(10, 6))
+    # plt.plot(tamanhos_entrada, tempos_sequencial, label="Sequencial (O(n))", marker='o', markersize=3, color='blue')
+    # plt.xlabel("Tamanho da entrada (n)")
+    # plt.ylabel("Tempo de execução (ms)")
+    # plt.title("Tempo de Execução da Busca Sequencial para Encontrar Pico")
+    # plt.legend()
+    # plt.grid(True)
+    # plt.tight_layout()
+    # plt.show() 
+
+    # plt.figure(figsize=(10, 6))
+    # plt.plot(tamanhos_entrada, tempos_binaria, label="Binária (O(log n))", marker='x', markersize=3, color='red')
+    # plt.xlabel("Tamanho da entrada (n)")
+    # plt.ylabel("Tempo de execução (ms)")
+    # plt.title("Tempo de Execução da Busca Binária para Encontrar Pico")
+    # plt.legend()
+    # plt.grid(True)
+    # plt.tight_layout()
+    # plt.show()
+
 if __name__ == "__main__":
     gerar_todos_os_vetores()
     medir_tempos()
     grafico()
+ # type: ignore
